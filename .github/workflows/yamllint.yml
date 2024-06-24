@@ -16,7 +16,7 @@ jobs:
     steps:
       - name: "checkout"
         uses: "actions/checkout@v4"
-      - name: "review yaml file format"
+      - name: "review yaml format"
         uses: "reviewdog/action-yamllint@v1"
         with:
           github_token: "${{ secrets.GITHUB_TOKEN }}"
