@@ -14,17 +14,13 @@ jobs:
   yamllint:
     runs-on: ubuntu-latest
     steps:
-      - name: "Checkout"
+      - name: "checkout"
         uses: actions/checkout@v4
-      - name: "Create PR comment of reviewdog"
+
+      - name: "review yaml file format"
         uses: reviewdog/action-yamllint@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-pr-review
           level: warning
           yamllint_flags: '-c .yamllint ./.github/workflows/'
-      - name: "lint All The Things in Repository"
-        uses: karancode/yamllint-github-action@v2.1.1
-        with:
-          yamllint_file_or_dir: ./.github/workflows/
-          yamllint_config_filepath: .yamllint
