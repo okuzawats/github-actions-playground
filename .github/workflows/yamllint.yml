@@ -19,6 +19,7 @@ jobs:
       - name: "Create PR comment of reviewdog"
         uses: reviewdog/action-yamllint@v1
         with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-pr-review
           level: warning
           yamllint_flags: '-c .yamllint ./.github/workflows/'
