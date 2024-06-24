@@ -22,5 +22,5 @@ jobs:
           github_token: "${{ secrets.GITHUB_TOKEN }}"
           reporter: "github-pr-review"
           level: "warning"
-          yamllint_flags: '-c .yamllint ./.github/workflows/'
+          yamllint_flags: "-c .yamllint ./.github/workflows/"
           fail_on_error: true
