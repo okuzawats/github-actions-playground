@@ -1,0 +1,26 @@
+# @EnKUMAによる以下の記事を参考に作成
+# 
+# GitHubActionsのCI/CDにyamllintを組み込んで作業の安全性を高める
+# https://qiita.com/EnKUMA/items/6974e310221fc9765c2f
+name: "yamllint"
+
+on:
+  pull_request:
+    branches:
+      - "main"
+    types: [ "opened", "synchronize", "closed" ]
+
+jobs:
+  yamllint:
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: "checkout"
+        uses: "actions/checkout@v4"
+      - name: "review yaml format"
+        uses: "reviewdog/action-yamllint@v1"
+        with:
+          github_token: "${{ secrets.GITHUB_TOKEN }}"
+          reporter: "github-pr-review"
+          level: "warning"
+          yamllint_flags: "-c .yamllint ./.github/workflows/"
+          fail_on_error: true
