@@ -37,5 +37,4 @@ rules:
   octal-values: disable
   quoted-strings: enable
   trailing-spaces: disable
-    level: warning
   truthy: disable
