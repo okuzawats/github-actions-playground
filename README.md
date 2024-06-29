@@ -8,7 +8,7 @@ Androidアプリ開発に関するGitHub Actionsの実験場
 
 [adrienverge/yamllint: A linter for YAML files.](https://github.com/adrienverge/yamllint)、および[reviewdog/action-yamllint: Run yamllint with reviewdog](https://github.com/reviewdog/action-yamllint)を用いた、YAMLファイルのlintを実行するワークフロー。
 
-YAMLのフォーマットは(.yamllint)[./yamllint]に定義する。
+YAMLのフォーマットは[.yamllint](./yamllint)に定義する。
 
 ### actionlint
 
@@ -18,4 +18,4 @@ YAMLのフォーマットは(.yamllint)[./yamllint]に定義する。
 
 [danger/danger: 🚫 Stop saying "you forgot to …" in code review (in Ruby)](https://github.com/danger/danger)、および[MeilCli/danger-action: Execute danger action for GitHub Actions.](https://github.com/MeilCli/danger-action)を用いた、自動レビューを実行するワークフロー。
 
-Dangerのバージョンは(Gemfile)[./Gemfile]に定義する。また、実行するDangerのコードは(Dangerfile)[./Dangerfile]に定義する。
+Dangerのバージョンは[Gemfile](./Gemfile)に定義する。また、実行するDangerのコードは[Dangerfile](./Dangerfile)に定義する。
