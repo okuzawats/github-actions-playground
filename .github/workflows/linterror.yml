@@ -1,0 +1,14 @@
+name: "linterror"
+
+on:
+  pull_request:
+    branch:
+      - "main"
+    types: [ "opened", "synchronize", "closed" ]
+
+jobs:
+  yamllint:
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: "checkout"
+        uses: "actions/checkout@v4"
