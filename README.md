@@ -1,5 +1,8 @@
 # Android GitHub Actions Playground
 
+[![actionlint](https://github.com/okuzawats/android-github-actions-playground/actions/workflows/actionlint.yml/badge.svg?branch=main)](https://github.com/okuzawats/android-github-actions-playground/actions/workflows/actionlint.yml)
+[![yamllint](https://github.com/okuzawats/android-github-actions-playground/actions/workflows/yamllint.yml/badge.svg?branch=main)](https://github.com/okuzawats/android-github-actions-playground/actions/workflows/yamllint.yml)
+
 Androidアプリ開発に関するGitHub Actionsの実験場
 
 ## ワークフローの説明
