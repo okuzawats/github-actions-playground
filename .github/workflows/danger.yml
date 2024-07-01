@@ -17,11 +17,7 @@ jobs:
         with:
           bundler-cache: true
       - name: "run danger"
-        uses: "MeilCli/danger-action@v6"
-        with:
-          danger_file: "Dangerfile"
-          danger_id: "danger-pr"
-          install_path: "vendor/bundle"
-          plugins_file: "Gemfile"
+        run: |
+          danger
         env:
           DANGER_GITHUB_API_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
