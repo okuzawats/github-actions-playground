@@ -1,9 +1,9 @@
-# Android GitHub Actions Playground
+# GitHub Actions Playground
 
 [![actionlint](https://github.com/okuzawats/android-github-actions-playground/actions/workflows/actionlint.yml/badge.svg?branch=main)](https://github.com/okuzawats/android-github-actions-playground/actions/workflows/actionlint.yml)
 [![yamllint](https://github.com/okuzawats/android-github-actions-playground/actions/workflows/yamllint.yml/badge.svg?branch=main)](https://github.com/okuzawats/android-github-actions-playground/actions/workflows/yamllint.yml)
 
-Androidアプリ開発に関するGitHub Actionsの実験場
+GitHub Actionsの実験場です。
 
 ## ワークフローの説明
 
@@ -19,6 +19,6 @@ YAMLのフォーマットは[.yamllint](./.yamllint)に定義する。
 
 ### danger
 
-[danger/danger: 🚫 Stop saying "you forgot to …" in code review (in Ruby)](https://github.com/danger/danger)、および[MeilCli/danger-action: Execute danger action for GitHub Actions.](https://github.com/MeilCli/danger-action)を用いた、自動レビューを実行するワークフロー。
+[danger/danger: 🚫 Stop saying "you forgot to …" in code review (in Ruby)](https://github.com/danger/danger)を用いた、自動レビューを実行するワークフロー。
 
 Dangerのバージョンは[Gemfile](./Gemfile)に定義する。また、実行するDangerのコードは[Dangerfile](./Dangerfile)に定義する。
